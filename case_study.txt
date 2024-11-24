@@ -8,18 +8,22 @@ own clothes, which were usually second-hand and mostly bought from small vintage
 around the UK. Viv’s passion for all things vintage has certainly not waned over the years and he has
 built the business up from one small back street shop in Preston, Lancashire, to currently having 20
 store locations nationwide.
+
 Mailing List
 Viv’s has a mailing list which is made up of customers who opted in to ‘hearing from Viv’s about its
 latest products, services, special offers and promotions’, when they purchased items in a store.
 Customers can opt in to receive promotional mail via postal mail, email, or both.
+
 Email
 Email information may include new product information, products that are currently on offer (e.g.
 30% off selected footwear) and promotions (e.g. Gift your Old Gear for a 15% discount).
+
 Mail
 They produce two brochures each year, Spring/Summer, and Autumn/Winter, which contain details
 of some of their ‘vintage style’ products. Included with the brochure is a £10 gift card as an incentive
 to draw customers into the shop.
 Gift Your Old Gear Scheme
+
 Customers can take their old clothing to a Viv’s store. They accept any brand and any clothing type, as
 long as it's in good usable condition. These are donated to a charity, and as a thank you, customers
 will receive 15% off their next Viv’s purchase.
@@ -29,6 +33,7 @@ The 15% off offer can be used against a full price purchase made the same day as
 Your Old Gear donation. The discount is per transaction and is not based on number of items
 donated. The discount cannot be used to buy gift cards or in conjunction with any other offer.
 CO1605 Systems Analysis and Database Design
+
 Purchasing Goods
 When a customer takes the items they want to purchase to the till area the Sales Assistant asks if
 they would like to join the mailing list. If the customer agrees, the Assistant takes their name and
@@ -36,6 +41,7 @@ address, email address, and preferred mailing options, and records it in the Mai
 If they have a £10 discount card, the customer presents it, and the amount is deducted from the
 total. The card is retained by the Sales Assistant and filed away in the office at the end of the day for
 auditing purposes. The payment for the goods is then made with cash or card.
+
 If the customer has a gift card, they present this at the point of purchase. The items are scanned into
 the EPOS system and the card is swiped through the card reader on the till. The amount is deducted
 from the total sale. The card is returned to the customer and any remaining balance is paid.
@@ -45,6 +51,7 @@ and delivered to the store for free, or to the customer’s home address for a p
 If the customer brings in suitable items for the Gift Your Old Gear scheme the Sales Assistant just
 ‘clicks’ the Gift Your Old Gear button on the EPOS display and the 15% is automatically deducted (the
 discount may not be used to buy gift cards or in conjunction with any other offer).
+
 Returning Goods
 Goods purchased can be returned to any of the shops regardless of where they were bought. Items
 must have a valid receipt (less than 28 days old), be in an unused state, and still have all tags/labels
