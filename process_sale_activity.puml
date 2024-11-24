@@ -1,0 +1,122 @@
+@startuml Process_Sale_Activity
+
+|Customer|
+start
+:Bring items to counter;
+
+|Sales Assistant|
+:Scan items;
+:Calculate total;
+
+|#AntiqueWhite|System|
+:Update inventory count;
+
+|Sales Assistant|
+:Ask about Gift Your Old Gear;
+
+|Customer|
+if (Has items to donate?) then (yes)
+    :Present items for donation;
+    
+    |Sales Assistant|
+    :Inspect donation items;
+    
+    if (Items acceptable?) then (yes)
+        :Record donation;
+        
+        |#AntiqueWhite|System|
+        :Apply 15% discount;
+    else (no)
+        :Explain rejection reason;
+    endif
+endif
+
+|Customer|
+if (Has discount card?) then (yes)
+    :Present £10 discount card;
+    
+    |Sales Assistant|
+    :Validate discount card;
+    
+    |#AntiqueWhite|System|
+    if (Card valid?) then (yes)
+        :Apply £10 discount;
+        :Mark card as used;
+    else (no)
+        |Sales Assistant|
+        :Explain card invalid;
+    endif
+endif
+
+|Sales Assistant|
+:Ask about mailing list;
+
+|Customer|
+if (Wants to join?) then (yes)
+    :Provide contact details;
+    
+    |Sales Assistant|
+    :Record customer preferences;
+    
+    |#AntiqueWhite|System|
+    :Add to mailing list;
+endif
+
+|Customer|
+:Choose payment method;
+
+if (Payment type?) then (Gift Card)
+    :Present gift card;
+    
+    |#AntiqueWhite|System|
+    :Check gift card balance;
+    
+    if (Sufficient balance?) then (yes)
+        :Deduct amount from card;
+        :Update gift card balance;
+    else (no)
+        :Request additional\npayment method;
+        
+        |Customer|
+        :Provide additional payment;
+    endif
+    
+else (Card/Cash)
+    |Sales Assistant|
+    if (Payment method?) then (Card)
+        :Process card payment;
+        
+        |#AntiqueWhite|System|
+        :Connect to payment gateway;
+        :Validate transaction;
+        
+        if (Transaction approved?) then (yes)
+            :Record payment;
+        else (no)
+            |Sales Assistant|
+            :Request alternative payment;
+            
+            |Customer|
+            :Provide alternative payment;
+        endif
+        
+    else (Cash)
+        |Sales Assistant|
+        :Process cash payment;
+        :Give change if needed;
+    endif
+endif
+
+|#AntiqueWhite|System|
+:Generate receipt;
+
+|Sales Assistant|
+:Print receipt;
+:Hand items and receipt;
+
+|Customer|
+:Receive items and receipt;
+
+stop
+
+@enduml
